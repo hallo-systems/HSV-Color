@@ -14,25 +14,25 @@
                     <input type="text" value="0" name="" id="inputH">
                 </td>
                 <td>
-                    <input type="range" min="0" max="100" value="0" id="sliderH" onchange="ChangeHSV()">
+                    <input type="range" min="0" max="100" value="0" id="sliderH" oninput="ChangeHSV()" onchange="ChangeHSV()">
                 </td>
             </tr>
             <tr>
                 <td>
                     S:
-                    <input type="text" value="0" name="" id="inputS">
+                    <input type="text" value="100" id="inputS">
                 </td>
                 <td>
-                    <input type="range" min="0" max="100" value="100" id="sliderS" onchange="ChangeHSV()">
+                    <input type="range" min="0" max="100" value="100" id="sliderS" oninput="ChangeHSV()" onchange="ChangeHSV()">
                 </td>
             </tr>
             <tr>
                 <td>
                     V:
-                    <input type="texr" value="0" id="inputV">
+                    <input type="texr" value="100" id="inputV">
                 </td>
                 <td>
-                    <input type="range" min="0" max="100" value="100" id="sliderV" onchange="ChangeHSV()">
+                    <input type="range" min="0" max="100" value="100" id="sliderV" oninput="ChangeHSV()" onchange="ChangeHSV()">
                 </td>
             </tr>
         </tbody>
