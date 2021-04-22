@@ -6,36 +6,37 @@
     <title>HSV</title>
 </head>
 <body>
-    <table>
+    <table id="backGroundColor" style="background-color: red;">
         <tbody>
             <tr>
                 <td>
                     H:
-                    <input type="text" value="0" name="" id="">
+                    <input type="text" value="0" name="" id="inputH">
                 </td>
                 <td>
-                    <input type="range" id="" min="0" max="255" value="0">
+                    <input type="range" min="0" max="100" value="0" id="sliderH" onchange="ChangeHSV()">
                 </td>
             </tr>
             <tr>
                 <td>
                     S:
-                    <input type="text" value="0" name="" id="">
+                    <input type="text" value="0" name="" id="inputS">
                 </td>
                 <td>
-                    <input type="range" min="0" max="100" value="100">
+                    <input type="range" min="0" max="100" value="100" id="sliderS" onchange="ChangeHSV()">
                 </td>
             </tr>
             <tr>
                 <td>
                     V:
-                    <input type="texr" value="0">
+                    <input type="texr" value="0" id="inputV">
                 </td>
                 <td>
-                    <input type="range" min="0" max="100" value="100">
+                    <input type="range" min="0" max="100" value="100" id="sliderV" onchange="ChangeHSV()">
                 </td>
             </tr>
         </tbody>
     </table>
+    <script src="script.js"></script>
 </body>
 </html>
