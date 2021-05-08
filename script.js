@@ -1,10 +1,7 @@
-let hue = document.getElementById("sliderH");
-let sustein = document.getElementById("sliderS");
-let value = document.getElementById("sliderV");
-
-
-
 function ChangeHSV() {
+    let hue = document.getElementById("sliderH");
+    let sustein = document.getElementById("sliderS");
+    let value = document.getElementById("sliderV");
     let colorCode;
     let iHue = parseInt(hue.value);
     let iSustenin = parseInt(sustein.value);
