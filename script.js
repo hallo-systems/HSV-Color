@@ -13,8 +13,11 @@ function ChangeHSV() {
     iSustenin = Math.floor((iSustenin*255)/100);
     iValue = Math.floor((iValue*255)/100);
     colorCode = HtoR(iHue,iSustenin,iValue);
-    document.getElementById("backGroundColor").style.backgroundColor = `rgb(${colorCode[0]}, ${colorCode[1]}, ${colorCode[2]})`;
+    document.getElementById('a').style.backgroundColor = `rgb(${colorCode[0]}, ${colorCode[1]}, ${colorCode[2]})`;
+    document.getElementById('b').style.backgroundColor = `rgb(${colorCode[0]}, ${colorCode[1]}, ${colorCode[2]})`;
+    document.getElementById('c').style.backgroundColor = `rgb(${colorCode[0]}, ${colorCode[1]}, ${colorCode[2]})`;
 }
+
 
 function HtoR(h,s,v){
     let r,g,b;
