@@ -1,12 +1,59 @@
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HSV</title>
+    <style>
+        span.backGroundColor {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+}
+
+.box {
+  display:block;
+  position:relative;
+  margin:30px auto 0;
+  width:100px;
+  height:100px;
+  transform-style:preserve-3d;
+  transform:rotateX(-25deg) rotateY(-45deg); /* ここで四角の角度を調整できる */
+}
+
+.box .items {
+  position:absolute;
+  left:0;
+  right:0;
+  box-sizing:border-box;
+  border:2px solid #333;
+  width:100%;
+  height:100%;
+}
+
+.items{
+    background-color: red;
+}
+
+/* 上 */
+.box .items:nth-child(1) {
+  transform:translate3d(0, -50px, 0) rotateX(-90deg);
+}
+
+/* 左 */
+.box .items:nth-child(2) {
+  transform:translate3d(0, 0, 50px);
+}
+
+/* 右 */
+.box .items:nth-child(3) {
+  transform:translate3d(50px, 0, 0) rotateY(90deg);
+}
+    </style>
 </head>
 <body>
-    <table id="backGroundColor" style="background-color: red;">
+    <table  class="backGroundColor" style="background-color: red; margin: 3rem auto;">
         <tbody>
             <tr>
                 <td>
@@ -37,6 +84,11 @@
             </tr>
         </tbody>
     </table>
+    <div class="box">
+        <div id="a" class="items"></div>
+        <div id="b" class="items"></div>
+        <div id="c" class="items"></div>
+    </div>
     <script src="script.dart.js"></script>
     <script src="script.js"></script>
 </body>
